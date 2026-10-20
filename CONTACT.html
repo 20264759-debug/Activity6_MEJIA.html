@@ -5,140 +5,290 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Mejia's Creatives</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ font-family: 'Georgia', 'Times New Roman', serif;
+ background-color: #f4f1eb;
+ color: #2b2b2b;
+ }
+ header {
+ background-color: #3a3a3a;
+ color: #ffffff;
+ padding: 16px 40px 0;
+ }
+ .header-top {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-bottom: 14px;
+ }
+ .header-divider {
+ border: none;
+ border-top: 1px solid #6b6b6b;
+ margin: 0;
+ }
+ .logo-area {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ }
+ .logo-circle {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background-color: #e8d9b5;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 12px;
+ font-weight: bold;
+ color: #3a3a3a;
+ }
+ .logo-area h1 {
+ font-size: 18px;
+ letter-spacing: 2px;
+ font-weight: 600;
+ }
+ nav ul {
+ list-style: none;
+ display: flex;
+ justify-content: center;
+ gap: 36px;
+ padding: 14px 0;
+ flex-wrap: wrap;
+ }
+ nav a {
+ color: #ffffff;
+ text-decoration: none;
+ font-size: 14px;
+ letter-spacing: 1px;
+ padding-bottom: 4px;
+ }
+ nav a:hover { color: #e8d9b5; }
+ nav a.active {
+ color: #e8d9b5;
+ border-bottom: 1px solid #e8d9b5;
+ }
 
-  body {
-    font-family: 'Georgia', 'Times New Roman', serif;
-    background-color: #f4f1eb;
-    color: #2b2b2b;
-  }
 
-  header {
-    background-color: #3a3a3a;
-    color: #ffffff;
-    padding: 16px 40px 0;
-  }
+ /* ---------- Contact section ---------- */
+ main {
+ max-width: 900px;
+ margin: 60px auto;
+ padding: 60px 40px;
+ background-color: #f7f4ee;
+ border-radius: 4px;
+ }
+ .contact-intro {
+ text-align: center;
+ margin-bottom: 48px;
+ }
+ .contact-intro h2 {
+ font-size: 36px;
+ letter-spacing: 2px;
+ margin-bottom: 10px;
+ }
+ .contact-intro p {
+ font-size: 15px;
+ color: #5a5a5a;
+ }
+ .contact-grid {
+ display: grid;
+ grid-template-columns: 1fr 1.2fr;
+ gap: 56px;
+ }
 
-  .header-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 14px;
-  }
 
-  .header-divider {
-    border: none;
-    border-top: 1px solid #6b6b6b;
-    margin: 0;
-  }
+ /* Left column: contact details */
+ .details h3 {
+ font-size: 18px;
+ letter-spacing: 2px;
+ color: #a88a3d;
+ margin-bottom: 28px;
+ text-align: left;
+ }
+ .detail-item { margin-bottom: 26px; }
+ .detail-item h4 {
+ font-size: 13px;
+ letter-spacing: 1.5px;
+ margin-bottom: 6px;
+ text-align: left;
+ }
+ .detail-item p,
+ .detail-item a {
+ font-size: 15px;
+ line-height: 1.6;
+ color: #4a4a4a;
+ text-decoration: none;
+ text-align: left;
+ }
+ .detail-item a:hover { color: #a88a3d; }
 
-  .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
 
-  .logo-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #e8d9b5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: bold;
-    color: #3a3a3a;
-  }
+ /* Right column: form */
+ form label {
+ display: block;
+ font-size: 13px;
+ font-weight: bold;
+ letter-spacing: 1.5px;
+ margin-bottom: 8px;
+ text-align: left;
+ }
+ form input,
+ form textarea {
+ width: 100%;
+ font-family: inherit;
+ font-size: 15px;
+ padding: 12px 14px;
+ margin-bottom: 22px;
+ background-color: #ffffff;
+ border: 1px solid #d8d3c7;
+ border-radius: 3px;
+ color: #2b2b2b;
+ }
+ form textarea {
+ min-height: 140px;
+ resize: vertical;
+ }
+ form input:focus,
+ form textarea:focus {
+ outline: 2px solid #a88a3d;
+ outline-offset: 1px;
+ }
+ form button {
+ width: 100%;
+ padding: 14px;
+ font-family: inherit;
+ font-size: 14px;
+ letter-spacing: 2px;
+ color: #ffffff;
+ background-color: #3a3a3a;
+ border: none;
+ border-radius: 3px;
+ cursor: pointer;
+ }
+ form button:hover { background-color: #55484f; }
+ form button:focus-visible {
+ outline: 2px solid #a88a3d;
+ outline-offset: 2px;
+ }
+ .form-status {
+ margin-top: 14px;
+ font-size: 14px;
+ color: #4a6b3a;
+ min-height: 1.2em;
+ }
 
-  .logo-area h1 {
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 600;
-  }
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 36px;
-    padding: 14px 0;
-    flex-wrap: wrap;
-  }
+ footer {
+ background-color: #3a3a3a;
+ color: #cfcfcf;
+ text-align: center;
+ padding: 18px;
+ font-size: 13px;
+ letter-spacing: 1px;
+ }
 
-  nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding-bottom: 4px;
-  }
 
-  nav a:hover { color: #e8d9b5; }
-
-  nav a.active {
-    color: #e8d9b5;
-    border-bottom: 1px solid #e8d9b5;
-  }
-
-  main {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 80px 40px;
-    background-color: #f7f4ee;
+ .card {
+    background-color: #f8f4f4;
+    border: 5px solid #5a3a3a;
+    border-radius: 48px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+    max-width: 2000px;
+    min-height: 700px;      
+    width: 100%;
+    padding: 100px 90px;
     text-align: center;
-    border-radius: 4px;
   }
 
-  main h2 {
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
 
-  footer {
-    background-color: #3a3a3a;
-    color: #cfcfcf;
-    text-align: center;
-    padding: 18px;
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
-
-  @media (max-width: 700px) {
-    header { padding: 16px 16px 0; }
-    nav ul { gap: 20px; }
-    main { margin: 20px 12px; padding: 48px 20px; }
-    main h2 { font-size: 28px; }
-  }
+ @media (max-width: 700px) {
+ header { padding: 16px 16px 0; }
+ nav ul { gap: 20px; }
+ main { margin: 20px 12px; padding: 36px 20px; }
+ .contact-intro h2 { font-size: 28px; }
+ .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+ }
 </style>
 </head>
 <body>
-
 <header>
-  <div class="header-top">
-    <div class="logo-area">
-      <div class="logo-circle">MA</div>
-      <h1>MEJIA'S CREATIVES</h1>
-    </div>
-  </div>
-  <hr class="header-divider">
-  <nav aria-label="Main">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="gallery.html">GALLERY</a></li>
-      <li><a href="contact.html" class="active">CONTACT</a></li>
-    </ul>
-  </nav>
+ <div class="header-top">
+ <div class="logo-area">
+ <div class="logo-circle">MA</div>
+ <h1>MEJIA'S CREATIVES</h1>
+ </div>
+ </div>
+ <hr class="header-divider">
+ <nav aria-label="Main">
+ <ul>
+ <li><a href="index.html">HOME</a></li>
+ <li><a href="about.html">ABOUT</a></li>
+ <li><a href="gallery.html">GALLERY</a></li>
+ <li><a href="contact.html" class="active">CONTACT</a></li>
+ </ul>
+ </nav>
 </header>
 
+
 <main>
-  <h2>CONTACT</h2>
+  <div class="card">
+ <div class="contact-intro">
+ <h2>Get In Touch</h2>
+ <p>Have a question or a project in mind? Reach out to us below.</p>
+ </div>
+
+
+ <div class="contact-grid">
+ <section class="details" aria-labelledby="details-heading">
+ <h3 id="details-heading">CONTACT DETAILS</h3>
+
+
+ <div class="detail-item">
+ <h4>EMAIL</h4>
+ <p>hello@mejiascreatives.com</p>
+ </div>
+
+
+ <div class="detail-item">
+ <h4>STUDIO ADDRESS</h4>
+ <p>123 Creative Blvd, Art District<br>Manila, Philippines</p>
+ </div>
+
+
+ <div class="detail-item">
+ <h4>BUSINESS HOURS</h4>
+ <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+ </div>
+ </section>
+
+
+ <form id="contact-form" aria-label="Contact form">
+ <label for="full-name">FULL NAME</label>
+ <input type="text" id="full-name" name="name" placeholder="Your Name" required>
+
+
+ <label for="email">EMAIL ADDRESS</label>
+ <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+
+ <label for="message">COMMENTS / MESSAGE</label>
+ <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+
+ <button type="submit">SEND MESSAGE</button>
+ <p class="form-status" id="form-status" role="status"></p>
+ </form>
+ </div>
 </main>
 
+
 <footer>
-  &copy; 2026 Mejia's Creatives
+ &copy; 2026 Mejia's Creatives | All Rights Reserved
 </footer>
+
+
 
 </body>
 </html>
